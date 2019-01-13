@@ -21,6 +21,30 @@
     <link rel="stylesheet" type="text/css" href="../static/css/util.css">
     <link rel="stylesheet" type="text/css" href="../static/css/main.css">
     <!--===============================================================================================-->
+
+    <!-- <style>
+        .module-button {
+            width: 100%;
+            height: 50px;
+            background: #846add;
+        }
+	</style> -->
+
+    <style>
+        div {
+            outline: 1px red;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#sos").draggable();
+            $("#fall").draggable();
+            $("#alarm").draggable();
+        });
+    </script>
 </head>
 
 <body>
@@ -29,7 +53,25 @@
         <div class="container-contact100">
             <div class="wrap-contact100">
                 <div class="contact100-pic js-tilt" data-tilt>
-                    <img src="../static/images/img-03.png">
+                    <div class="col">
+                        <img style="width: 300px" src="../static/images/img-03.png">
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div id="sos" class="col-sm module-button ui-widget-content">
+                            <p> sos </p>
+                        </div>
+                        <br>
+                        <div id="fall" class="col-sm module-button ui-widget-content">
+                            <p> fall detection </p>
+                        </div>
+                        <br>
+                        <div id="alarm" class="col-sm module-button ui-widget-content">
+                            <p> alarm </p>
+                        </div>
+
+                    </div>
+
 
                 </div>
 
@@ -70,9 +112,12 @@
 						</span>
                     </div>
 
-                    <input type="checkbox" name="sos" value="SOS" /> SOS<br>
+                    <!-- <div id="draggable" class="ui-widget-content">
+                        <p>Drag me around</p>
+                    </div> -->
+                    <!-- <input type="checkbox" name="sos" value="SOS" /> SOS<br>
                     <input type="checkbox" name="fall" value="Fall Detection" /> Fall Detection <br>
-                    <input type="checkbox" name="alarm" value="Fall Detection" /> Fall Detection <br>
+                    <input type="checkbox" name="alarm" value="Fall Detection" /> Fall Detection <br> -->
                     <!-- <div class="wrap-input100 validate-input" data-validate="Message is required">
                         <textarea class="input100" name="message" placeholder="Message"></textarea>
                         <span class="focus-input100"></span>

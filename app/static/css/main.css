@@ -402,14 +402,11 @@ textarea.input100 {
 }
 
 .module-button {
-    width: 50px;
+    width: 150px;
     height: 50px;
+    background: #846add;
     border-radius: 25px;
     background: #846add;
-    font-family: Montserrat-Bold;
-    font-size: 15px;
-    line-height: 1.5;
-    color: #fff;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -422,10 +419,14 @@ textarea.input100 {
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
+    margin: 5px;
 }
 
-.module-button:hover {
-    background: #333333;
+.module-button p {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
 }
 
 
