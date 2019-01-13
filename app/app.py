@@ -6,8 +6,8 @@ from flask import url_for, redirect, render_template, flash, g, session
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
-    return 'Hello, World!'
+def index():
+    return render_template('index.html', name="Pramoda Karnati")
 
     
 if __name__ == '__main__':
